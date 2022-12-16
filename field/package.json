@@ -1,0 +1,12 @@
+{
+  "name": "field",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn node-sass assets/scss/field.scss assets/css/field.css"
+  },
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

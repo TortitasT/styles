@@ -1,0 +1,27 @@
+.field {
+  position: relative;
+}
+
+.field>input {
+  padding: 1em 0.5em 1em 0.5em;
+  transition: 0.2s padding;
+}
+
+.field>input+label {
+  opacity: 0;
+  font-size: 0.75em;
+  position: absolute;
+  top: 1em;
+  left: 0.6em;
+  transform: translateY(0);
+  transition: 0.2s transform, 0.2s opacity;
+}
+
+.field>input:not(:placeholder-shown) {
+  padding: 1.5em 0.5em 0.5em 0.5em;
+}
+
+.field>input:not(:placeholder-shown)+label {
+  opacity: 0.5;
+  transform: translateY(-0.5em);
+}
